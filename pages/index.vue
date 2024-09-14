@@ -244,14 +244,33 @@
             <!--.footer-->
             <div class="footer p-5">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-1">
                         <img src="../assets/assets/logo-rb.png" alt="img-footer" class="img-footer">
                     </div>
-                    <div class="col-lg-4">
-                        <img src="../assets/assets/logo-rb.png" alt="img-footer" class="img-footer">
+                    <div class="col-lg-3">
+                        <h4 class="name">Kiana</h4>
+                        <h5 class="name1">Cake and Cookies</h5>
+                        <p>
+                            <h6 class="name2">"Cake for every moment"</h6>
+                        </p>
+                        
                     </div>
                     <div class="col-lg-4">
-                        <img src="../assets/assets/logo-rb.png" alt="img-footer" class="img-footer">
+                        <h5>Alamat Toko</h5>
+                            <hr class="mt-2">
+                            <div class="my-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Jl.H.Oce Sk, Sukanagara, Purbaratu, Kota Tasikmalaya.
+                            </div>  
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Media Sosial</h5>
+                        <hr class="mt-2">
+                        <div class=" my-3">
+                            <div class="wa">
+                                <img src="../assets/assets/whatsapp-rb.png" alt="wa" class="width: 70px; height: 50px;">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,8 +291,8 @@ img {
 }
 
 .img-footer {
-    width: 10%;
-    height: 7%;
+    width: 150px;
+    height: 150px;
     
 }
 
@@ -310,11 +329,11 @@ img {
 
 .tittle-costum {
     margin-top: 100px;
-    background-color: #C6AC7B;
+    background-color: #F0EDDC;
 }
 
 .costum {
-    background-color: #C6AC7B;
+    background-color: #F0EDDC;
     margin-top: 150px;
 }
 
@@ -345,5 +364,14 @@ h2 {
 
 h3, h4, h5, .btn {
     font-family: "Poppins", sans-serif;
+}
+
+.bi {
+    height: 50px;
+    width: 65px;
+}
+
+hr {
+    width: 45%;
 }
 </style>
