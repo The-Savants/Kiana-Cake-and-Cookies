@@ -1,13 +1,13 @@
 <template>
     <div class="container-fluid p-0">
-        <Header />
-        <slot />
+    <Header />
+
+    <slot  />
     </div>
 </template>
 
 <style>
-body {
-    padding: 0;
-    margin: 0;
-}
+/* body {
+    background-color: #F0EDDC;
+} */
 </style>
