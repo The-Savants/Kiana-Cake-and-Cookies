@@ -13,8 +13,8 @@
         <div class="row mt-5 justify-content-center">
             <div class="col-lg-3">
                 <div class="card add rounded-4 shadow">
-                    <div class="card-body text-center">
-                        <img src="" alt="img-cake">
+                    <div class="card-body text-center p-3">
+                        <img src="~/assets/img/bgcake-detail.png" alt="img-cake" class="mt-2 rounded-3">
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="text-end mt-3">
                                 <nuxt-link to="/product">
-                                    <button type="submit" class="btn btn-warning rounded-5">Edit</button>
+                                    <button type="submit" class="btn rounded-5">Edit</button>
                                 </nuxt-link>
                             </div>
                         </form>
@@ -64,17 +64,25 @@ input {
     width: 365px;
 }
 
-.btn-warning {
-    width: 100px;
-    margin-left: 135px;
+.btn {
+    width: 120px;
+    margin-left: 120px;
+    font-size: 20px;
+    color: white;
+    background-color: #C6AC7B;
+
 }
 
 .add {
-    height: 300px;
+    height: 325px;
 }
 
 h6 {
     margin-top: 125px;
+}
+
+img {
+    width: 250px;
 }
 
 </style>

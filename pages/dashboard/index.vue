@@ -13,9 +13,9 @@
         <div class="row mt-5 justify-content-center">
             <div class="col-lg-4">
                 <nuxt-link to="/product" class="text-dark" style="text-decoration: none;">
-                    <div class="card">
+                    <div class="card rounded-3">
                         <div class="card-body shadow p-3 text-center rounded">
-                            <img src="" alt="img-product">
+                            <img src="~/assets/img/cakecake.png" alt="img-product" class="mt-3 rounded-3">
                             <h5 class="mt-3">Daftar Produk</h5>
                         </div>
                     </div>
@@ -23,9 +23,9 @@
             </div>
             <div class="col-lg-4">
                 <nuxt-link to="/customer" class="text-dark" style="text-decoration: none;">
-                    <div class="card">
+                    <div class="card rounded-3">
                         <div class="card-body shadow p-3 text-center rounded">
-                            <img src="" alt="img-product">
+                            <img src="~/assets/img/notes.png" alt="img-product" class="mt-3 rounded-3">
                             <h5 class="mt-3">Daftar Pesanan</h5>
                         </div>
                     </div>

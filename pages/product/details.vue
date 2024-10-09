@@ -16,7 +16,7 @@
             <div class="col-lg-3">
                 <div class="card img-cake rounded-4 shadow">
                     <div class="card-body text-center">
-                        <img src="" alt="img-cake">
+                        <img src="~/assets/img/bgcake-detail.png" alt="img-cake" class="mt-1 rounded-3">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
         </div>
 
         <!--Modal-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-md p-4">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -85,7 +85,7 @@ h2, h5, h6, li, .btn, .modal {
 }
 
 .img-cake {
-    height: 300px;
+    height: 360px;
 }
 
 h6 {
@@ -94,7 +94,7 @@ h6 {
 
 .edit {
     width: 100px;
-    border: 3px solid yellow;
+    border: 3px solid #C6AC7B;
 }
 
 .btn-danger {
@@ -121,6 +121,10 @@ h6 {
 
 .modal-dialog {
     background-color: white;
+}
+
+img {
+    width: 250px;
 }
 
 </style>

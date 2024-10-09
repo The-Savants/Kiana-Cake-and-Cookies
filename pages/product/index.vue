@@ -1,3 +1,38 @@
+<script setup>
+const supabase = useSupabaseClient()
+const keyword = ref('')
+const cakes = ref([])
+const categories = ref([])
+
+
+const getCake = async () => {
+  const { data, error } = await supabase.from('produk').select(`*, kategori(*)`)
+  .ilike('nama_kue', `%${keyword.value}%`)
+  if (data) {
+    cakes.value = data
+      }
+}
+
+const getCategory = async () => {
+    const { data, error } = await supabase.from('kategori').select('*')
+    if (data) categories.value = data
+}
+
+const cakeFiltered = computed(() => {
+  return cakes.value.filter((c) => {
+    return (
+      c.nama_kue?.toLowerCase().includes(keyword.value.toLowerCase()) ||
+      c.harga?.toLowerCase().includes(keyword.value.toLowerCase())
+    )
+  })
+})
+
+onMounted (() => {
+    getCake()
+    getCategory()
+})
+</script>
+
 <template>
     <div class="container-fluid pt-4">
 
@@ -11,26 +46,28 @@
         </div>
 
         <!--Categories-->
-        <div class="row kategori mt-5 mx-5 justify-content-center">
+        <div class="row categories mt-5 mx-5 justify-content-center">
             <div class="col-lg-2 text-center">
-                <img src="" alt="img-kategori">
+                <img src="~/assets/img/birthday-cake.png" alt="img-kategori">
                 <h6 class="mt-2">Birthday cake</h6>
             </div>
             <div class="col-lg-2 text-center">
-                <img src="" alt="img-kategori">
+                <img src="~/assets/img/wedding-cake.png" alt="img-kategori">
                 <h6 class="mt-2">Wedding cake</h6>
             </div>
             <div class="col-lg-2 text-center">
-                <img src="" alt="img-kategori">
+                <img src="~/assets/img/bolu-jadoel.png" alt="img-kategori">
                 <h6 class="mt-2">Bolu jadoel</h6>
             </div>
             <div class="col-lg-2 text-center">
-                <img src="" alt="img-kategori">
+                <img src="~/assets/img/dessert.png" alt="img-kategori">
                 <h6 class="mt-2">Dessert</h6>
             </div>
             <div class="col-lg-2 text-center">
-                <img src="" alt="img-kategori">
-                <h6 class="mt-2 costum rounded">Costum cake</h6>
+                <img src="~/assets/img/custom.png" alt="img-kategori">
+                <nuxt-link to="/custom" style="text-decoration: none;">
+                    <h6 class="mt-2 custom rounded-5">Custom cake</h6>
+                </nuxt-link>            
             </div>
         </div>
 
@@ -47,61 +84,25 @@
         <!--Add-->
         <div class="row mt-5">
             <div class="col">
-                <nuxt-link to="../product/add">
-                    <button class="btn btn-primary .btn-add">Tambah Kue</button>
-                </nuxt-link>
+                <nuxt-link to="/product/add">
+                    <div class="btn add center">Tambah Kue</div>
+                </nuxt-link>                
             </div>
         </div>
 
         <!--Catalogue-->
-        <div class="catalogue p-5">
+        <div class="catalogue p-4">
             <div class="row cake gy-5">
-                <div class="col-lg-3">
-                    <div class="card rounded-4 shadow">
+                <div v-for="(cake, i) in cakeFiltered" :key="i" class="col-lg-3 col-md-4 col-sm-2 d-flex mt-4">
+                    <div class="card flex-fill rounded-4 shadow p-3">
+                        <img :src="cake.foto_kue" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="" alt="img-cake">
-                            <h5 class="mt-3">Butterfly cake</h5>
-                            <h3 class="fw-bold">Rp. 35.000</h3>
+                            <h5 class="mt-3">{{ cake.nama_kue }}</h5>
+                            <h3 class="fw-bold">{{ cake.harga }}</h3>
                             <div class="text-end my-2">
-                                <nuxt-link to="../product/details">
-                                    <button class="btn btn-warning mt-3 rounded-5">Detail</button>
+                                <nuxt-link :to="`/catalogue/${cake.id}`">
+                                    <button class="btn mt-3 rounded-5">Beli</button>
                                 </nuxt-link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card rounded-4 shadow">
-                        <div class="card-body">
-                            <img src="" alt="img-cake">
-                            <h5 class="mt-3">Butterfly cake</h5>
-                            <h3 class="fw-bold">Rp. 35.000</h3>
-                            <div class="text-end my-2">
-                                <button class="btn btn-warning mt-3 rounded-5">Detail</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card rounded-4 shadow">
-                        <div class="card-body">
-                            <img src="" alt="img-cake">
-                            <h5 class="mt-3">Butterfly cake</h5>
-                            <h3 class="fw-bold">Rp. 35.000</h3>
-                            <div class="text-end my-2">
-                                <button class="btn btn-warning mt-3 rounded-5">Detail</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card rounded-4 shadow">
-                        <div class="card-body">
-                            <img src="" alt="img-cake">
-                            <h5 class="mt-3">Butterfly cake</h5>
-                            <h3 class="fw-bold">Rp. 35.000</h3>
-                            <div class="text-end my-2">
-                                <button class="btn btn-warning mt-3 rounded-5">Detail</button>
                             </div>
                         </div>
                     </div>
@@ -128,40 +129,43 @@ h3, h5, h6, input, .btn {
 input {
     font-size: 14px;
     height: 45px;
+    border: 1px solid #C6AC7B;
 }
-
 
 .form-control {
   border-right: none;
 }
 
-/* .text-center {
-    margin-right: 50px;
-} */
-
-.costum {
-    background-color: white;
+.custom {
+    background-color: #C6AC7B;
+    color: white;
     height: 20px;
 }
 
-
 .btn {
-    width: 90px;
+    width: 100px;
     margin-right: 10px;
-    font-size: 20px;
-}
-
-.btn-primary {
-    font-size: 18px;
-    width: 160px;
-}
-
-.col {
-    margin-left: 200px;
+    font-size: 17px;
+    color: white;
+    background-color: #C6AC7B;
 }
 
 .cake {
     padding: 50px;
+}
+
+.categories img {
+    width: 100px;
+}
+
+.card {
+    border: 1px solid #C6AC7B;
+}
+
+.add {
+    width: 200px;
+    font-size: 20px;
+    margin-left: 200px;
 }
 
 </style>

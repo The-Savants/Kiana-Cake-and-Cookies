@@ -24,7 +24,7 @@
                                 </ul>
                             </div>
                             <div class="col-md-4">
-                                <img src="" alt="img-cake">
+                                <img src="~/assets/img/bgcake-detail.png" alt="img-cake" class="rounded-3">
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                                 </ul>
                             </div>
                             <div class="col-md-4">
-                                <img src="" alt="img-cake">
+                                <img src="~/assets/img/bgcake-detail.png" alt="img-cake" class="rounded-3">
                             </div>
                         </div>
                     </div>
@@ -74,6 +74,10 @@ h2, li {
 .cake {
     margin-top: 20px;
     font-size: 25px;
+}
+
+img {
+    width: 175px;
 }
 
 </style>

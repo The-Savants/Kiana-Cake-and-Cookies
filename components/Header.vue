@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <img src="../assets/logo-rb.png" alt="logo" class="logo">
+            <img src="../assets/img/logo-rb.png" alt="logo" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -17,7 +17,7 @@
                         <nuxt-link to="/about" class="nav-link">About</nuxt-link>
                     </li>
                     <li class="nav-item">
-                        <nuxt-link to="/contact" class="nav-link">Contact</nuxt-link>
+                        <nuxt-link to="/contact" class="nav-link">Contact us</nuxt-link>
                     </li>
                 </ul>
             </div>
@@ -28,6 +28,9 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Miltonian+Tattoo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&display=swap');
 
+.navbar {
+    background-color: #F0EDDC;
+}
 
 .nav-item {
     font-size: 1rem;

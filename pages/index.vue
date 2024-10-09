@@ -1,7 +1,7 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         
-        <div class="container">
+        <div class="container-fluid cover p-0">
             <div class="row">
                 <div class="col">
                     <div class="text-center">
@@ -28,11 +28,24 @@
                 </div>
             </div>
 
-            <div class="row product gy-5">
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
+            <div class="overflow-auto no-scrollbar product p-4">
+                <div class="d-inline-block m-3">
+                    <div class="card flex-fill rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
+                            <h5 class="mt-3">Butterfly cake</h5>
+                            <h3 class="fw-bold">Rp. 35.000</h3>
+                            <div class="text-end my-2">
+                                <nuxt-link to="../catalogue/detail">
+                                    <button class="btn mt-3 rounded-5">Beli</button>
+                                </nuxt-link>                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-inline-block m-3">
+                    <div class="card flex-fill rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
+                        <div class="card-body">
                             <h5 class="mt-3">Butterfly cake</h5>
                             <h3 class="fw-bold">Rp. 35.000</h3>
                             <div class="text-end my-2">
@@ -41,10 +54,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
+                <div class="d-inline-block m-3">
+                    <div class="card flex-fill rounded-4 shadow p-3" >
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
                             <h5 class="mt-3">Butterfly cake</h5>
                             <h3 class="fw-bold">Rp. 35.000</h3>
                             <div class="text-end my-2">
@@ -53,10 +66,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
+                <div class="d-inline-block m-3">
+                    <div class="card flex-fill rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
                             <h5 class="mt-3">Butterfly cake</h5>
                             <h3 class="fw-bold">Rp. 35.000</h3>
                             <div class="text-end my-2">
@@ -65,10 +78,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
+                <div class="d-inline-block m-3">
+                    <div class="card flex-fill rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
+                            <h5 class="mt-3">Butterfly cake</h5>
+                            <h3 class="fw-bold">Rp. 35.000</h3>
+                            <div class="text-end my-2">
+                                <button class="btn mt-3 rounded-5">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-inline-block m-3">
+                    <div class="card flex-fill rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
+                        <div class="card-body">
                             <h5 class="mt-3">Butterfly cake</h5>
                             <h3 class="fw-bold">Rp. 35.000</h3>
                             <div class="text-end my-2">
@@ -92,10 +117,24 @@
             </div>
 
             <div class="row product gy-5">
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
+                <div class="col-sm-3">
+                    <div class="card rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
+                            <h5 class="mt-3">Butterfly cake</h5>
+                            <h3 class="fw-bold">Rp. 35.000</h3>
+                            <div class="text-end my-2">
+                                <nuxt-link to="../catalogue/detail">
+                                    <button class="btn mt-3 rounded-5">Beli</button>
+                                </nuxt-link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
+                        <div class="card-body">
                             <h5 class="mt-3">Butterfly cake</h5>
                             <h3 class="fw-bold">Rp. 35.000</h3>
                             <div class="text-end my-2">
@@ -104,10 +143,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
+                <div class="col-sm-3">
+                    <div class="card rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
                             <h5 class="mt-3">Butterfly cake</h5>
                             <h3 class="fw-bold">Rp. 35.000</h3>
                             <div class="text-end my-2">
@@ -116,22 +155,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
+                <div class="col-sm-3">
+                    <div class="card rounded-4 shadow p-3">
+                        <img src="../assets/img/bgcake-detail.png" alt="img-cake" class="card-img-top">
                         <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
-                            <h5 class="mt-3">Butterfly cake</h5>
-                            <h3 class="fw-bold">Rp. 35.000</h3>
-                            <div class="text-end my-2">
-                                <button class="btn mt-3 rounded-5">Beli</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-flex">
-                    <div class="card flex-fill rounded-4 shadow">
-                        <div class="card-body">
-                            <img src="../assets/redvelvet-cake.jpeg" alt="img-cake" class="card-img-top">
                             <h5 class="mt-3">Butterfly cake</h5>
                             <h3 class="fw-bold">Rp. 35.000</h3>
                             <div class="text-end my-2">
@@ -150,25 +177,27 @@
         </div>
 
 
-        <!--Costum-->
+        <!--Custom-->
         <div class="container-custom p-4 rounded-5">
 
             <div class="text-center">
-                <h3 class="mt-3">Costum Your Cake</h3>
+                <h3 class="mt-3">Custom Your Cake</h3>
             </div>
 
             <div class="row costum mt-5 p-5 justify-content-center">
                 <div class="col-lg-4">
-                    <div class="card card-costum rounded-4">
+                    <div class="card card-custom rounded-4">
                         <div class="card-body text-center">
-                            <img src="../assets/custom.png" alt="img-cake">
+                            <img src="../assets/img/bgcake-custom.png" alt="img-custom" class="img-custom mt-1">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 content">
-                    <h5 class="fw-bold">Costum kue keinginanmu, </h5>
+                    <h5 class="fw-bold">Custom kue keinginanmu, </h5>
                     <h5>agar moment perayaan terasa lebih bermakna</h5>
-                    <button class="btn pesan rounded-5">Pesan via Whatsapp</button>
+                    <nuxt-link href="https://wa.me/6281224703915" style="text-decoration: none; color: black;">
+                        <button class="btn pesan rounded-5">Pesan via Whatsapp</button>
+                    </nuxt-link>
                 </div>
             </div>
         </div>
@@ -188,33 +217,33 @@
         </div>
 
         <div class="row about p-5 justify-content-center">
-            <div class="col-lg-2 d-flex">
+            <div class="col-sm-2 d-flex">
                 <div class="card flex-fill">
-                    <img src="../assets/logo-rb.png" alt="img-logo" class="img-logo">
+                    <img src="../assets/img/logo-rb.png" alt="img-logo" class="img-logo">
                     <div class="card-body text-center">
                         <h6 class="mt-3">Logo</h6>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-flex">
+            <div class="col-sm-2 d-flex">
                 <div class="card flex-fill">
-                    <img src="../assets/owner.png" alt="img-owner" class="img-owner p-3">
+                    <img src="../assets/img/owner.png" alt="img-owner" class="img-owner p-3">
                     <div class="card-body text-center">
                         <h6 class="mt-1">Owner</h6>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-flex">
+            <div class="col-sm-2 d-flex">
                 <div class="card flex-fill">
-                    <img src="../assets/kitchen.jpeg" alt="img-kitchen" class="img-kitchen p-3">
+                    <img src="../assets/img/kitchen.jpeg" alt="img-kitchen" class="img-kitchen p-3">
                     <div class="card-body text-center">
                         <h6 class="mt-1">Dapur</h6>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-flex">
+            <div class="col-sm-2 d-flex">
                 <div class="card flex-fill">
-                    <img src="../assets/redvelvet-cake.jpeg" alt="img-product" class="img-product p-3">
+                    <img src="../assets/img/bgcake-custom.png" alt="img-product" class="img-product p-3">
                     <div class="card-body text-center">
                         <h6 class="mt-1">Produk</h6>
                     </div>
@@ -225,7 +254,7 @@
         <!--Footer-->
         <div class="row footer p-5 mt-5">
             <div class="col-md-1">
-                <img src="../assets/logo-rb.png" alt="img-logo">
+                <img src="../assets/img/logo-rb.png" alt="img-logo">
             </div>
             <div class="col-md-3">
                 <h3>Kiana Cake and Cookies</h3>
@@ -246,30 +275,29 @@
             <div class="col-md-4">
                 <h4>Social Media</h4>
                 <hr>
-                <div class="row">
-                    <div class="col-sm-2">
+                <div class="socialmedia mt">
+                    <nuxt-link href="https://wa.me/6281224703915" style="text-decoration: none; color: black;">
                         <i class="bi bi-whatsapp"></i>
+                    </nuxt-link>
+                    <nuxt-link href="https://www.facebook.com/kiana.arrabella.9" style="text-decoration: none; color: black;">
+                        <i class="bi bi-facebook"></i>
+                    </nuxt-link>
+                    <nuxt-link href="https://www.instagram.com/kianacakeandcookies/profilecard/?igsh=dGI2Z3kzNnQ1dXl4" style="text-decoration: none; color: black;">
+                        <i class="bi bi-instagram"></i>  
+                    </nuxt-link>                             
+                    <div class="d-flex align-items-center mt-2">
+                        <i class="bi bi-envelope-at"></i>
+                        <span><h6>contact@kianacake.id</h6></span>
                     </div>
-                    <div class="col-sm-8">
-                        <h6 class="mt-2">+62 81234567890</h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-2">
-                        <i class="bi bi-facebook"></i>                    </div>
-                    <div class="col-sm-8">
-                        <h6 class="mt-2">Kiana Arabella</h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-2">
-                        <i class="bi bi-instagram"></i>                    </div>
-                    <div class="col-sm-8">
-                        <h6 class="mt-2">kianacakeandcookies</h6>
-                    </div>
-                </div>
+                </div>                  
             </div>
         </div>
+
+        <!--whatsapp-->
+            <nuxt-link class="btn-wa fixed-bottom text-center" href="https://wa.me/6281224703915" style="text-decoration: none; color: white;">
+                <i class="bi bi-whatsapp fs-3"></i>
+            </nuxt-link>
+        
 
     </div>
 </template>
@@ -281,11 +309,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
 
 
-.container {
-  background: url('../assets/bg-cake.png') no-repeat center center;
+.cover {
+  background: url('../assets/img/bg-cake-rb.png') no-repeat center center;
   background-size: cover;
-  height: 650px;
+  background-color: #F0EDDC;
+  height: 550px;
+  width: 100%;
 }
+
+/* .container-fluid {
+    background-color: #C6AC7B
+} */
 
 h1 {
   font-family: "Berkshire Swash", serif;
@@ -312,7 +346,7 @@ h3, h4, h5, h6, .btn  {
 
 .btn {
     width: 100px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     font-size: 17px;
     color: white;
     background-color: #C6AC7B;
@@ -326,8 +360,8 @@ h3, h4, h5, h6, .btn  {
     margin-left: 75px;
 }
 
-.card-costum {
-    height: 300px;
+.card-custom {
+    height: 350px;
 }
 
 .pesan {
@@ -348,7 +382,7 @@ h3, h4, h5, h6, .btn  {
     margin-left: 70px;
 }
 
-i {
+.footer i {
     font-size: 25px;
     margin-left: 20px;
 }
@@ -404,6 +438,10 @@ img {
     margin-left: 20px;
 }
 
+.footer span {
+    margin-left: 15px;
+}
+
 .seemore {
     font-size: 20px;
     width: 200px;
@@ -414,5 +452,33 @@ img {
 .container-custom {
     background-color: #F0EDDC;
 }
+
+.overflow-auto {
+  overflow-x: auto;
+  padding: 1rem 0;
+  white-space: nowrap;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;   
+}
+
+.img-custom {
+    width: 300px;
+}
+
+.btn-wa {
+    background-color: green;
+    width: 2.5rem;
+    border-radius: 100px;
+    margin-bottom: 50px;
+    margin-left: 1200px;
+}
+
 
 </style>

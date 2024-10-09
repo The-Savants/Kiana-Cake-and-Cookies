@@ -22,33 +22,33 @@
         </div>
 
         <div class="row about p-5 justify-content-center">
-            <div class="col-lg-2 d-flex">
+            <div class="col-lg-3 d-flex">
                 <div class="card flex-fill">
-                    <img src="~/assets/logo-rb.png" alt="img-logo" class="img-logo">
+                    <img src="~/assets/img/logo-rb.png" alt="img-logo" class="img-logo">
                     <div class="card-body text-center">
-                        <h6 class="mt-3">Logo</h6>
+                        <h6 class="mt-4 text-logo">Logo</h6>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-flex">
+            <div class="col-lg-3 d-flex">
                 <div class="card flex-fill">
-                    <img src="~/assets/owner.png" alt="img-owner" class="img-owner p-3">
+                    <img src="~/assets/img/owner.png" alt="img-owner" class="img-owner p-3">
                     <div class="card-body text-center">
                         <h6 class="mt-1">Owner</h6>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-flex">
+            <div class="col-lg-3 d-flex">
                 <div class="card flex-fill">
-                    <img src="~/assets/kitchen.jpeg" alt="img-kitchen" class="img-kitchen p-3">
+                    <img src="~/assets/img/kitchen.jpeg" alt="img-kitchen" class="img-kitchen p-3">
                     <div class="card-body text-center">
                         <h6 class="mt-1">Dapur</h6>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 d-flex">
+            <div class="col-lg-3 d-flex">
                 <div class="card flex-fill">
-                    <img src="~/assets/redvelvet-cake.jpeg" alt="img-product" class="img-product p-3">
+                    <img src="~/assets/img/bgcake-custom.png" alt="img-product" class="img-product p-3">
                     <div class="card-body text-center">
                         <h6 class="mt-1">Produk</h6>
                     </div>
@@ -72,22 +72,26 @@ h5, h6 {
 }
 
 .img-logo {
-    width: 170px;
+    width: 260px;
     margin: auto;
     margin-top: 10px;
 }
 
 .img-owner, .img-kitchen, .img-product {
     margin: auto;
-    width: 183px;
+    width: 275px;
 }
 
 .img-product {
-    height: 183px;
+    height: 275px;
 }
 
 .card {
     border: 1px solid #C6AC7B;
 }
+
+/* .text-logo {
+    margin-top: 77px;
+} */
 
 </style>

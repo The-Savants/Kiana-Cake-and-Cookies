@@ -12,7 +12,7 @@
 
         <div class="row mt-5 justify-content-center">
             <div class="col-lg-4">
-                <div class="card add rounded-4 shadow">
+                <div class="card add-img rounded-4 shadow">
                     <div class="card-body text-center">
                         <h6>Tambahkan foto kue disini</h6>
                     </div>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="text-end mt-3">
                                 <nuxt-link to="/product">
-                                    <button type="submit" class="btn btn-warning rounded-5">Tambah</button>
+                                    <button type="submit" class="btn rounded-5">Tambah</button>
                                 </nuxt-link>
                             </div>
                         </form>
@@ -64,12 +64,14 @@ input {
     width: 365px;
 }
 
-.btn-warning {
-    width: 100px;
-    margin-left: 135px;
+.btn {
+    width: 120px;
+    margin-left: 125px;
+    color: white;
+    background-color: #C6AC7B;
 }
 
-.add {
+.add-img {
     height: 300px;
 }
 

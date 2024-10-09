@@ -16,13 +16,14 @@
                     <div class="card-body">
                         <div class="row p-3">
                             <div class="col-md-4">
-                                <img src="~/assets/redvelvet-cake.jpeg" alt="img-cake" class="img-cake rounded-4 mt-3">
+                                <img src="~/assets/img/bgcake-detail.png" alt="img-cake" class="img-cake rounded-4 mt-3">
                             </div>
                             <div class="col-md-7">
                                 <ul>
                                     <li class="list-group-item name fw-semibold">Butterfly cake</li>
                                     <li class="list-group-item">Birthday cake</li>
                                     <li class="list-group-item">Ukuran 12cm</li>
+                                    <li class="list-group-item">Free lilin</li>
                                     <li class="list-group-item price fw-bold">Rp. 35.000</li>
                                 </ul>
                             </div>
